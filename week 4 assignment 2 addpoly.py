@@ -3,7 +3,7 @@ def addpoly(p1,p2):
     for i in p1:
         x=i[1]
         if ispresentinsumlist(sumlist,x):
-            break
+            continue
         else:
             if ispresent(p2,x):
                 exp=()
@@ -44,5 +44,5 @@ def ispresent(p,n):
             return y
 
                     
-result=addpoly([(2,1)],[(-2,1)])
+result=addpoly([(4,3),(3,0)],[(-4,3),(2,1)])
 print(result)
