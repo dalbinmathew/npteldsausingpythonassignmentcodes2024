@@ -1,4 +1,4 @@
-def combinations(d, current=[], sum_to=7, test=None):
+def combinations(d, current=[], sum_to=15, test=None):
     if test is None:
         test = []  # Initialize test once when the function is first called
     
@@ -11,4 +11,4 @@ def combinations(d, current=[], sum_to=7, test=None):
     
     return test
 
-print(combinations([2,3,4]))
+print(combinations([2,3,5,10]))

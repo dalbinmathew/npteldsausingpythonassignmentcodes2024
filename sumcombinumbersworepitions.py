@@ -1,4 +1,4 @@
-def combinations(d,current=[],sumto=7,test=None):
+def combinations(d,current=[],sumto=15,test=None):
     if test is None:
         test=[]
     if sum(current)==sumto:
@@ -10,4 +10,4 @@ def combinations(d,current=[],sumto=7,test=None):
     return len(test)
 
 print("number of combinations:")
-print(combinations([2,3,4]))
+print(combinations([2,3,5,10]))
