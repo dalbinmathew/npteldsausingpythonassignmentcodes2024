@@ -1,7 +1,12 @@
-list=[1,3,2,5,4]
-# print(list[0:-3])
-# print(min(list))
-# print(list[::-1])
+def lps(s):
+    longest=""
+    for i in range(len(s)):
+        for j in range(i+1,len(s)+1):
+            test=s[i:j]
+            if test==test[::-1]:
+                if len(test)>len(longest):
+                    longest=test
+    return longest
 
-# str="aaaabaasfga"
-# print(str[::-1])
+ss="abbabba"
+print(lps(ss))

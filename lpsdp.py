@@ -23,5 +23,5 @@ def longest_palindromic_substring(s):
     return longest
 
 # Example usage
-string = "abba"
+string = "ababb"
 print(longest_palindromic_substring(string))  # Output: "bab" or "aba"
